@@ -7,6 +7,14 @@ import scrapy
 
 
 class MacheteItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+    question = scrapy.Field()
+    answer = scrapy.Field()
+    example = scrapy.Field()
+    topic = scrapy.Field()
+    tags = scrapy.Field()
+    multiprocessId = scrapy.Field() 
+    version = scrapy.Field()
+    
+class VersionItem(scrapy.Item):
+    version = scrapy.Field()
+    source = scrapy.Field()
